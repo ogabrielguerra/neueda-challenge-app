@@ -7,6 +7,9 @@
 This app relies on Docker, so you´re going to find two related DOcker files in the root dir: Dockerfile and docker-compose.yaml.
 These files are responsible for the container's configuration and can be used to add more features or tie other useful technologies as well.
 
+    ** Dependencies
+    Get node_modules install running "yarn install" from the container dir.
+
     ** Files
     Please, note that the App related files are mounted in external volumes, preventing Docker to delete project's data.
 
@@ -19,6 +22,7 @@ These files are responsible for the container's configuration and can be used to
 
     ** Get Running!
     To get the App/Container running just get into the terminal, type "docker-compose up -d" and hit enter.
+    The app is configured to run in http://192.168.99.100. If it's necessary to change container's IP, there's global vars in PHP and JS files.
 
 
 *** BACKEND
@@ -34,6 +38,11 @@ These file is responsible for loading necessary Classes using PHP Autoloader fun
 *** FRONTEND
 The frontend uses HTML, CSS and JS. Since it's a simple App jQuery suits it well. Other dependencies are Bootstrap anf Fontawesome.
 All the assets, including images are located in /assets.
+
+
+*** TESTS
+There's two simple tests written to work with Jest. Although apparently modest these tests handle part of the core of the App - the input url.
+After installing dependencies via Yarn, run "yarn test".
 
 
 *** DOUBTS? SUGGESTIONS OR CRITICS?
