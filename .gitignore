@@ -1,0 +1,5 @@
+*.idea
+.idea
+.db_data
+node_modules
+graphics

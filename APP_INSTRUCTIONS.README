@@ -1,0 +1,40 @@
+*******************************************
+    NEUEDA CHALLENGE | Gabriel Guerra
+    Please, read the instruction bellow :)
+*******************************************
+
+*** ENV / DOCKER
+This app relies on Docker, so you´re going to find two related DOcker files in the root dir: Dockerfile and docker-compose.yaml.
+These files are responsible for the container's configuration and can be used to add more features or tie other useful technologies as well.
+
+    ** Files
+    Please, note that the App related files are mounted in external volumes, preventing Docker to delete project's data.
+
+    ** Serving
+    For this stack we're going to user Apache + PHP7 + MySQL5.
+
+    ** DB
+    When the container is going up, Docker will make a data dump with the necessary tables and data.
+    The .sql script is in /dump. MySQL files are located in .db_data. There's no need to touch it.
+
+    ** Get Running!
+    To get the App/Container running just get into the terminal, type "docker-compose up -d" and hit enter.
+
+
+*** BACKEND
+The project's structure is very simple. You have a front-controller (index.php) which loads the file "bootstrap.php".
+These file is responsible for loading necessary Classes using PHP Autoloader function.
+
+    ** Extending  / Adding new Classes
+    If you need to extend features creating new Classes feel free to do so.
+    Just remember to place your Classes in /backend/classes dir.
+    Also the file must follow the patter [ClassName.Class.php] otherwise your Class won't load and the App will crash!
+
+
+*** FRONTEND
+The frontend uses HTML, CSS and JS. Since it's a simple App jQuery suits it well. Other dependencies are Bootstrap anf Fontawesome.
+All the assets, including images are located in /assets.
+
+
+*** DOUBTS? SUGGESTIONS OR CRITICS?
+Feel free to make contact. You can reach me at gabrielguerra@gmail.com

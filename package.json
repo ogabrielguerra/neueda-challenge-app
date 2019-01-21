@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
