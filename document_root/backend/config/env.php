@@ -9,7 +9,7 @@ header ('Content-type: text/html; charset=UTF-8');
 DEFINE ('ENV_PRODUCTION', false);
 
 /* GLOBAL CONFIGS */
-DEFINE ('APPURL', 'http://192.168.99.100/backend/');
+DEFINE ('APPURL', 'http://localhost/backend/');
 DEFINE ('SITEPATH', getcwd());
 DEFINE ('CLASSPATH', SITEPATH.'/classes/');
 DEFINE ('DEBUG', true);

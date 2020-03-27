@@ -3,7 +3,7 @@ version: '2'
 services:
   webserver:
     build: ./
-    image: runwaytest_web
+    image: neueda_app
     ports:
       - "80:80"
       - "443:443"

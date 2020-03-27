@@ -1,4 +1,4 @@
-const appBaseUrl = 'http://192.168.99.100/';
+const appBaseUrl = 'http://localhost/';
 class Shrimp{
     constructor(){
         $("#step1").fadeIn();

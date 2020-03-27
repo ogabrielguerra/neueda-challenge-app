@@ -30,7 +30,7 @@ if (!isset($_GET["r"]) || empty($_GET["r"])) {
     } catch (Exception $e) {
         //@TODO Log this exception with exact error
         throw new Exception('Db operation error.');
-        header("Location: http://192.168.99.100/500.php");
+        header("Location: http://localhost/500.php");
         die();
         //http_response_code(500);
     }
